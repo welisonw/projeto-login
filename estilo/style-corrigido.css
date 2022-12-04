@@ -23,10 +23,10 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    overflow: hidden;
+    overflow: hidden; /* Arredonda a borda da imagem */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.401);
     transition: width 0.2s, height 0.2s;
-    transition-timing-function: ease;
+    transition-timing-function: ease; /* representa a curva de velocidade em que a transição é realizada. ease: esse é o valor padrão e indica o efeito de transição com o início lento, durante rápido e no final, lento novamente; */
     transform: translate(-50%, -50%);
 }
 
@@ -63,10 +63,6 @@ form > div.campo {
     border-radius: 7px;
 }
 
-div.campo > label {
-    display: none;
-}
-
 div.campo > span {
     color: white;
     font-size: 2em;
@@ -87,7 +83,7 @@ div.campo > input {
 }
 
 div.campo >input:focus-within {
-    background-color: white;
+    background-color: white; /* Quando clicar dentro do campo e-mail ou senha, o background-color vai ficar branco */
 }
 
 form > input[type=submit] {
@@ -105,6 +101,10 @@ form > input[type=submit] {
 form > input[type=submit]:hover {
     background-color: #cfd8d5;
     color: #1d201f;
+}
+
+div.campo > label {
+    display: none;
 }
 
 form > a.botao {
